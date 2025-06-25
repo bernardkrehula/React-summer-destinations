@@ -1,6 +1,6 @@
 
-const CreateTour = (tour) => {
-   const { id, price, title, info, isInterested, image } = tour; 
+const CreateTour = ({id, price, title, info, isInterested, image, removeTourOnClick}) => {
+ 
     return (
         <li className='tour' key={id}>
             <img src={image}></img>
@@ -8,7 +8,7 @@ const CreateTour = (tour) => {
             <h2>{title}</h2>
             <p>{info}</p>
             <h3>Read More</h3>
-            <button>Not interested</button>
+            <button onClick={() => {removeTourOnClick(id)}}>Not interested</button>
           </li> 
     )
 } 

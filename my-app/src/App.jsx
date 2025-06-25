@@ -7,8 +7,9 @@ function App() {
   const [ tours, setTours ] = useState(toursData);
 
   const removeTourOnClick = (id) => {
-
+      setTours(prev => prev.filter(tour => tour.id !== id))
   }
+  
 
   return (
     <>
@@ -16,9 +17,8 @@ function App() {
         <h1>Our Tours</h1>
         <ul className='tours'>
           {tours.map(tour => {
-            tour.id = crypto.randomUUID();
             return (
-              <CreateTour key={tour.id} {...tour}/>
+              <CreateTour key={tour.id} {...tour} removeTourOnClick={removeTourOnClick}/>
             )
           })}
         </ul>
@@ -26,7 +26,6 @@ function App() {
     </>
   )
 }
-
 {/* <li className='tour'>
             <img src='https://www.course-api.com/images/tours/tour-1.jpeg'></img>
             <h4>$1000</h4>
