@@ -44,11 +44,22 @@ html {
   margin-left: 10px;
   margin-right: 10px;
   display: -webkit-box;
-  -webkit-line-clamp: 5; 
+  margin-left: 20px;
+  margin-right: 20px;
+  text-align: left;
+}
+.tour-info-clamp {
+  display: -webkit-box;
+  -webkit-line-clamp: 5;
   -webkit-box-orient: vertical;
   overflow: hidden;
   text-overflow: ellipsis;
-  text-align: left;
+}
+
+.tour-info-full {
+  display: block;
+  overflow: visible;
+  -webkit-line-clamp: unset;
 }
 .tour img {
   object-fit: cover;
@@ -70,8 +81,9 @@ html {
   margin-top: 15px;
   font-size: 2.2rem;
   text-align: left;
-  margin-left: 10px;
-  color:  rgb(40, 228, 62);
+  margin-left: 20px;
+  color: rgb(40, 228, 62);
+  cursor: pointer;
 }
 .tour button:hover {
   color: white;

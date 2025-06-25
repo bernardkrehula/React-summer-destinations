@@ -9,7 +9,9 @@ function App() {
   const removeTourOnClick = (id) => {
       setTours(prev => prev.filter(tour => tour.id !== id))
   }
-  
+  const readMe = (id) => {
+    setTours(prev => prev.map(tour => tour.id === id ? {...tour, isRead: !tour.isRead} : tour))
+  }
 
   return (
     <>
@@ -18,7 +20,7 @@ function App() {
         <ul className='tours'>
           {tours.map(tour => {
             return (
-              <CreateTour key={tour.id} {...tour} removeTourOnClick={removeTourOnClick}/>
+              <CreateTour key={tour.id} {...tour} removeTourOnClick={removeTourOnClick} readMe={readMe}/>
             )
           })}
         </ul>
