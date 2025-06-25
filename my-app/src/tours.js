@@ -1,4 +1,4 @@
-const tours = [
+const toursData = [
     {
         id: '',
         price: '1,995',
@@ -20,8 +20,8 @@ const tours = [
         price: '2,695',
         title: 'Best of Salzburg & Vienna in 8 Days Tour',
         info: "Let's go where classical music, towering castles, and the-hills-are-alive scenery welcome you to the gemütlichkeit of Bavaria and opulence of Austria's Golden Age. Your Rick Steves guide will bring this region's rich history and culture to life in festive Munich, Baroque Salzburg, sparkling Lake Hallstatt, monastic Melk, the blue Danube, and royal Vienna — with cozy villages and alpine vistas all along the way. Join us for the Best of Munich, Salzburg & Vienna in 8 Days!",
-        isInterested: 'https://www.course-api.com/images/tours/tour-3.jpeg',
-        image: ''
+        isInterested: '',
+        image: 'https://www.course-api.com/images/tours/tour-3.jpeg'
     },
     {
         id: '',
@@ -41,4 +41,4 @@ const tours = [
     }
 ]
 
-export default tours;
+export default toursData;
