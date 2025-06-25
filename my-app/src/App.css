@@ -23,6 +23,7 @@ html {
   grid-template-columns: repeat(3, 1fr);
   gap: 40px;
   justify-content: center;
+  align-items: start;
 }
 .tour {
   width: 450px;
@@ -72,10 +73,12 @@ html {
   font-size: 2rem;
   margin-top: 30px;
   padding: 5px;
-  width: 100%;
   color:  rgb(40, 228, 62);
   transition: 0.3s ease-in-out;
   cursor: pointer;
+  margin-left: 20px;
+  margin-right: 20px;
+  width: calc(100% - 40px);
 }
 .tour h3{
   margin-top: 15px;
@@ -94,11 +97,11 @@ html {
   position: absolute;
   z-index: 1;
   top: 0px;
-  left: 20px;
   font-size: 4rem;
   background-color:  rgb(40, 228, 62);
   color: white;
   font-weight: 500;
   padding: 2px 15px;
-  left: 310px;
+  left: 300px;
+  right: 0;
 }
