@@ -1,6 +1,6 @@
 
 const CreateTour = ({id, price, title, info, isRead, image, removeTourOnClick, readMe}) => {
- 
+    //makni readMe i napravi lokalni useState
     return (
         <li className='tour' key={id}>
             <img src={image}></img>
